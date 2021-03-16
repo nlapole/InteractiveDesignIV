@@ -98,23 +98,26 @@ ul {
     grid-row-start: 5;
     grid-row-end: 6;
 }
-
+}
 /*Styles for "20x20"*/
 
 /*Styles for "doorway*/
 .block {
     display: grid;
-    grid-template: repeat(13, auto) / repeat(9, auto);
+    grid-template: repeat(13, 30px) / repeat(9, 30px);
 }
 .fore {
     background-color:darkblue;
     grid-area: 1 / 1 / 13 / 3;
+    order:2;
 }
 .midd {
-    background-color:darkblue;
-    grid-area: 1 / 1 / 13 / 3;
+    background-color:lightskyblue;
+    grid-area: 2 / 1 / 13 / 8;
+    order:1;
 }
 .back {
-    background-color:darkblue;
-    grid-area: 1 / 1 / 13 / 3;
+    background-color:blue;
+    grid-area: 1 / 1 / 13 / 9;
+    order:0;
 }

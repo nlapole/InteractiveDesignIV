@@ -1,66 +1,120 @@
+/*Generic Stylings for text*/
+h1 {
+    text-align: center;
+}
+p {
+    text-align: center;
+    
+}
+ul {
+    text-align: center;
+    list-style: none;
+}
 
+/*Styles for MainPage*/
 .container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 600px;
+    justify-content: center;
+    gap: 25px;
+    grid-template-rows: repeat(20, 100px);
 }
 
 .item-1 {
     background-color: green;
     grid-column-start: 1;
     grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 4;
 }
 .item-2 {
     background-color: pink;
     grid-column-start: 1;
     grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 8;
 }
 .item-3 {
     background-color: goldenrod;
     grid-column-start: 1;
     grid-column-end: 2;
+    grid-row-start: 8;
+    grid-row-end:  12;
 }
 .item-4 {
     background-color:indianred;
     grid-column-start: 1;
     grid-column-end: 2;
+    grid-row-start: 12;
+    grid-row-end: 16;
 }
 .item-5 {
     background-color: sienna;
     grid-column-start: 1;
     grid-column-end: 2;
+    grid-row-start: 16;
+    grid-row-end: 20;
 }
-
-
 
 @media all and (min-width:800px){
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 150px);
 }
 
 .item-1 {
     background-color: green;
     grid-column-start: 1;
     grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 1;
 }
 .item-2 {
     background-color: pink;
     grid-column-start: 1;
     grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 5;
 }
 .item-3 {
     background-color: goldenrod;
     grid-column-start: 2;
     grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 5;
 }
 .item-4 {
     background-color:indianred;
     grid-column-start: 5;
     grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 5;
 }
 .item-5 {
     background-color: sienna;
     grid-column-start: 1;
     grid-column-end: 6;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+/*Styles for "20x20"*/
+
+/*Styles for "doorway*/
+.block {
+    display: grid;
+    grid-template: repeat(13, auto) / repeat(9, auto);
+}
+.fore {
+    background-color:darkblue;
+    grid-area: 1 / 1 / 13 / 3;
+}
+.midd {
+    background-color:darkblue;
+    grid-area: 1 / 1 / 13 / 3;
+}
+.back {
+    background-color:darkblue;
+    grid-area: 1 / 1 / 13 / 3;
 }

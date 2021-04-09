@@ -156,3 +156,70 @@ ul {
     grid-area: 1 / 1 / 13 / 9;
     order:0;
 }
+
+/*Styles for Final Project*/
+
+.flex {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.image {
+    display: grid;
+    max-width:504px;      
+    min-width:400px;
+    max-height:720px;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(12, 1fr);    
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.background {
+    height: 100%;
+}
+.parts{
+    
+}
+#one {
+    grid-area: 1 / 3 / 4 / 10;
+    order:9;
+}
+#two {
+    grid-area: 4 / 1 / 7 / 10;
+    order:8;
+}
+#three {
+    grid-area: 1 / -1 / 2 / -6;
+    order:7;
+}
+#four {
+    /*can't use fractional units in fr*/
+    grid-area: 3 / -1 / 6 / -5;
+    order:6;
+}
+#five {
+    grid-area: -5 / -4 / -7 / -5 ;
+    order:5;
+
+}
+#six {
+    grid-area:-3 / 1 / -4 / 16;
+    order:4;
+}
+#seven {
+    grid-area: -2 / 1 / -3 / 16 ;
+    order:3;
+}
+#eight {
+    grid-area: -1 / 1 / -2 / 16;
+    order:2;
+}
+#nine {
+    grid-area: 1/1/13/16;
+    order:1;
+}
